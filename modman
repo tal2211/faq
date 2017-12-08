@@ -1,0 +1,4 @@
+app/etc/modules/Mage_Faq.xml						app/etc/modules/Mage_Faq.xml
+app/code/local/Mike/Faq				app/code/local/Mike/Faq
+app/design/frontend/base/default/layout/mike_faq.xml     app/design/frontend/base/default/layout/mike_faq.xml
+app/design/frontend/base/default/template/mike_faq/     app/design/frontend/base/default/template/mike_faq/

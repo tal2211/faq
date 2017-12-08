@@ -1,0 +1,21 @@
+<?php
+
+
+$collection = $this->getFaqCollection();
+?>
+<div>
+  <?php if($collection && $collection->count()):?>
+      <ul>
+        <?php foreach ($collection as $item):?>
+          <li>
+            <div>
+              <h3><?php echo $item->getQuetion()?></h3>
+              <div><?php echo $item->getAnswer()?></div>
+            </div>
+          </li>
+        <?php endforeach;?>
+      </ul>
+  <?php else:?>
+      <div class="error"><?php echo  Mage::helper('mike_faq')->__('Faq list is empty!')?></div>
+  <?php endif?>
+</div>

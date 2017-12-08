@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<layout>
+    <mike_faq_index_index>
+        <reference name="content">
+            <block type="mike_faq/faq" name="faq_list" template="mike_faq/index.phtml" />
+        </reference>
+    </mike_faq_index_index>
+    <cms_index_index>
+      <reference name="content">
+          <block type="mike_faq/random"  name="random_faq_list" before="-" template="mike_faq/random_list.phtml" />
+      </reference>
+    </cms_index_index>
+</layout>

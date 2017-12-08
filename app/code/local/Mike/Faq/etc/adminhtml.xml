@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <mike_faq translate="title" module="mike_faq">
+                                        <title>Request</title>
+                                    </mike_faq>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <mike_faq translate="title" module="mike_faq">
+                        <title>Faq</title>
+                        <children>
+                            <mfaq translate="title" module="mike_faq">
+                                <title>Faq list</title>
+                                <sort_order>0</sort_order>
+                            </mfaq>
+                        </children>
+                    </mike_faq>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <mike_faq translate="title" module="mike_faq">
+            <title>Faq</title>
+            <sort_order>85</sort_order>
+            <children>
+                <mfaq translate="title" module="mike_faq">
+                    <title>Faq list</title>
+                    <action>adminhtml/mfaq</action>
+                    <sort_order>0</sort_order>
+                </mfaq>
+            </children>
+        </mike_faq>
+    </menu>
+</config>
